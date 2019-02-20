@@ -10,7 +10,7 @@ implements Weapon, Armor
 
     @Override
     int attack() { 
-        return dice.roll() + strength;   
+        return dice.roll() + getStrength();   
     }
     
     public Wizard(String n, int s, int d, int i){
