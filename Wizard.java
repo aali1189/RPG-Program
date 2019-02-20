@@ -49,12 +49,12 @@ implements Weapon, Armor
 
     @Override
     public int useWeapon() {
-        return dice.roll() + strength;
+        return dice.roll() + getStrength();
                 }
 
     @Override
     public int useArmor() {
-        return dice.roll() + strength;
+        return dice.roll() + getStrength()+castHeal();
     }
 
  
